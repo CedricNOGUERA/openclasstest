@@ -6,7 +6,7 @@ function Cart() {
 		PxBqtFleur = 15;
 
 	return (
-		<div className="col-sm-4">
+		<div className="col col-sm-4 col-md-3">
 			<div className="card">
 				<div className="card-body">
 					<h2> Panier </h2>
