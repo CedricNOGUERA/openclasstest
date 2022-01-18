@@ -1,13 +1,89 @@
 import "../styles/Banner.css";
-import logo from '../assets/logo_90.png'
+import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
+import App from "./App";
+import QuestionForm from "./QuestionFrom";
 
-function Banner() {
-	const title = "La Galerie OLLIER";
+
+function Banner({ children }) {
 	return (
-		
+
 		<div className="lmj-banner mb-2">
-			 <img src={logo} alt='La galerie OLLIER' className='lmj-logo' />
-			<h1>{title}</h1>
+
+
+
+			<div className="mb-4">
+				{/* <nav class="navbarfixed navbar fixed-top ">
+					<div class="container-fluid">
+						<a class="navbar-brand" href="#">Fixed top</a>
+					</div>
+				</nav> */}
+
+				<nav className="navbar navbar-light navbar-expand-md  bg-light fixed-top">
+					<div className="container-fluid">
+						<a className="navbar-brand" href="#">Offcanvas navbar</a>
+						<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+							<span className="navbar-toggler-icon"></span>
+						</button>
+						<div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+							<div className="offcanvas-header">
+								<h5 className="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+								<button type="button" className="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+							</div>
+							<div className="offcanvas-body">
+								<ul className="navbar-nav justify-content-start flex-grow-1 pe-3">
+									<li className="nav-item">
+										<Router>
+
+											<Link to="/">
+
+												<a className="nav-link active" aria-current="page">Home</a>
+											</Link>
+											<Routes>
+
+												<Route exact path="/" component={App} />
+											</Routes>
+										</Router>
+									</li>
+									<li className="nav-item">
+
+										<Router>
+
+											<Link to="/components/QuestionForm">
+
+												<a className="nav-link active" aria-current="page">QuestionForm</a>
+											</Link>
+											<Routes>
+
+												<Route exact path="/QuestionForm" component={QuestionForm} />
+											</Routes>
+										</Router>
+									</li>
+									<li className="nav-item dropdown">
+										<a className="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+											Dropdown
+										</a>
+										<ul className="dropdown-menu" aria-labelledby="offcanvasNavbarDropdown">
+											<li><a className="dropdown-item" href="#">Action</a></li>
+											<li><a className="dropdown-item" href="#">Another action</a></li>
+											<li>
+												<hr className="dropdown-divider" />
+											</li>
+											<li><a className="dropdown-item" href="#">Something else here</a></li>
+										</ul>
+									</li>
+								</ul>
+								<form className="d-flex">
+									<input className="form-control me-2" type="search" placeholder="Search" aria-label="Search" />
+									<button className="btn btn-outline-success" type="submit">Search</button>
+								</form>
+							</div>
+						</div>
+					</div>
+				</nav>
+			</div>
+
+
+			{children}
 		</div>
 	);
 }
