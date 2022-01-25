@@ -1,7 +1,6 @@
 import "../styles/Banner.css";
-import { BrowserRouter as Router, Route, Link, Routes } from 'react-router-dom';
-import App from "./App";
-import QuestionForm from "./QuestionFrom";
+import { Link } from 'react-router-dom';
+
 
 
 function Banner({ children }) {
@@ -12,17 +11,13 @@ function Banner({ children }) {
 
 
 			<div className="mb-4">
-				{/* <nav class="navbarfixed navbar fixed-top ">
-					<div class="container-fluid">
-						<a class="navbar-brand" href="#">Fixed top</a>
-					</div>
-				</nav> */}
+
 
 				<nav className="navbar navbar-light navbar-expand-md  bg-light fixed-top">
 					<div className="container-fluid">
 						<a className="navbar-brand" href="#">Offcanvas navbar</a>
 						<button className="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-							<span className="navbar-toggler-icon"></span>
+							<span className="navbar-toggler-icon">iubibi</span>
 						</button>
 						<div className="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
 							<div className="offcanvas-header">
@@ -32,31 +27,22 @@ function Banner({ children }) {
 							<div className="offcanvas-body">
 								<ul className="navbar-nav justify-content-start flex-grow-1 pe-3">
 									<li className="nav-item">
-										<Router>
 
-											<Link to="/">
+										<Link to="/">
 
-												<a className="nav-link active" aria-current="page">Home</a>
-											</Link>
-											<Routes>
+											<span className="nav-link active" aria-current="page">Home</span>
+										</Link>
 
-												<Route exact path="/" component={App} />
-											</Routes>
-										</Router>
+
+
 									</li>
 									<li className="nav-item">
+										<Link to="/components/PlantItem">
 
-										<Router>
+											<span className="nav-link active" aria-current="page">Rumbles</span>
+										</Link>
 
-											<Link to="/components/QuestionForm">
 
-												<a className="nav-link active" aria-current="page">QuestionForm</a>
-											</Link>
-											<Routes>
-
-												<Route exact path="/QuestionForm" component={QuestionForm} />
-											</Routes>
-										</Router>
 									</li>
 									<li className="nav-item dropdown">
 										<a className="nav-link dropdown-toggle" href="#" id="offcanvasNavbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,6 +55,7 @@ function Banner({ children }) {
 												<hr className="dropdown-divider" />
 											</li>
 											<li><a className="dropdown-item" href="#">Something else here</a></li>
+
 										</ul>
 									</li>
 								</ul>

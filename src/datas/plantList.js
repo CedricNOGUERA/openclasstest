@@ -9,103 +9,103 @@ import aloe from '../assets/aloe.jpg'
 import cactus from '../assets/cactus.jpg'
 export const plantList = [
     {
-		name: 'Monstera',
+        name: 'Monstera',
         cover: monstera,
-		category: 'classique',
+        category: 'classique',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '1ed',
+        id: '1ed',
         light: 1,
         water: 2,
         price: 6,
         isBestSale: true
-       
-	},
-	{
-		name: 'Ficus lyrata',
+
+    },
+    {
+        name: 'Ficus lyrata',
         cover: ficusLyrata,
-		category: 'classique',
+        category: 'classique',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '2ab',
+        id: '2ab',
         light: 1,
         water: 2,
         price: 5,
         isBestSale: true
-	},
-	{
-		name: 'Pothos argenté',
+    },
+    {
+        name: 'Pothos argenté',
         cover: pothos,
-		category: 'classique',
+        category: 'classique',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '3sd',
+        id: '3sd',
         light: 2,
         water: 2,
         price: 4,
         isBestSale: true
-	},
-	{
-		name: 'Yucca',
+    },
+    {
+        name: 'Yucca',
         cover: yucca,
-		category: 'classique',
+        category: 'classique',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '4kk',
+        id: '4kk',
         light: 3,
         water: 1,
         price: 6,
         isBestSale: true
-	},
-	{
-		name: 'Olivier',
+    },
+    {
+        name: 'Olivier',
         cover: olivier,
-		category: 'extérieur',
+        category: 'extérieur',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '5pl',
+        id: '5pl',
         light: 3,
         water: 1,
         price: 15,
         isBestSale: false
-	},
-	{
-		name: 'Géranium',
+    },
+    {
+        name: 'Géranium',
         cover: geranium,
-		category: 'extérieur',
+        category: 'extérieur',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '6uo',
+        id: '6uo',
         light: 1,
         water: 2,
         price: 4,
         isBestSale: true
-	},
-	{
-		name: 'Basilique',
+    },
+    {
+        name: 'Basilique',
         cover: basilic,
-		category: 'extérieur',
+        category: 'extérieur',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '7ie',
+        id: '7ie',
         light: 1,
         water: 2,
         price: 2,
         isBestSale: false
-	},
-	{
-		name: 'Aloe',
+    },
+    {
+        name: 'Aloe',
         cover: aloe,
-		category: 'plante grasse',
+        category: 'plante grasse',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '8fp',
+        id: '8fp',
         light: 1,
         water: 2,
         price: 6,
         isBestSale: true
-	},
-	{
-		name: 'Succulente',
+    },
+    {
+        name: 'Succulente',
         cover: cactus,
-		category: 'plante grasse',
+        category: 'plante grasse',
         description: 'Plante Tropicale, aussi appellée banian étrangleur',
-		id: '9vn',
+        id: '9vn',
         light: 1,
         water: 2,
         price: 6,
         isBestSale: true
-	}
+    }
 ];
