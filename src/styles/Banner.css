@@ -1,6 +1,19 @@
+
 .lmj-banner {
-	color: rgb(0, 58, 165);
+	background: rgb(0, 165, 129);
+	color: #fff;
 	text-align: right;
 	padding: 32px;
 	border-bottom: solid 3px rgb(6, 9, 161);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+
+}
+.navbarfixed{
+	background: rgb(0, 165, 129);
+
+}
+
+.lmj-logo {
+	height: 45px;
+	width: 45px;
 }
